@@ -1,6 +1,11 @@
+#Após salvar
+#executar Git Pasta
+#git add .
+#git commit -m "modificação feita" // o que alterou
+#git push origin main
 sArm=[600, 20, 15, 250, 0, 0, 17, 0, 43, 2]
 sIsa=[500, 10, 6]
-sCar=[]
+sCar=[200, 50, 15, 200]
 sFri=[]
 sHen=[]
 sGF=[100, 10,]
