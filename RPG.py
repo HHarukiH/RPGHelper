@@ -9,20 +9,33 @@ sCar=[200, 50, 15, 200]
 sFri=[]
 sHen=[]
 sGF=[100, 10,]
-sGA=[]
+sGA=[50, 7, 15]
 sHF=[]
 sHA=[]
 sHM=[]
 sMB=[]
+btl=[]
 while True:
-    psr=input("personagem:")
-    if psr=="arm" or psr=="Arm":
-        aco=input("atk, dan, buf, esc:")
+    psr=input("personagem, btl:")
+    if psr=="btl":
+        psr=input("def, print")
+        if psr=="def":
+            psr=input("quem:")
+            aco=int(input("quantos"))
+            btl=[psr]*int(aco)
+        elif psr=="print":
+            print(btl)
+    elif psr=="arm" or psr=="Arm":
+        aco=input("atk, dan, buf, sts, esc:")
         if aco=="atk":
             aci=input("atk:")
+            mir=input("em quem?[0-n]:")
+            btl
         elif aco=="dan":
             aci=input("dan:")
-            sArm[0]-=int(aci)-sts[1]
-            print (sts)
+            sArm[0]-=int(aci)-sArm[1]
+            print (sArm)
         elif aco=="buf":
             aci=input("buf:")
+        elif aco=="sts":
+            print (sArm)
